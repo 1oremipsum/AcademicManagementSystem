@@ -1,9 +1,15 @@
 <?php
     namespace controller;
+    use view\StudentView;
 
-    class StudentController {
+    class StudentController extends Controller{
+
+        public function __construct() {
+            $this->view = new StudentView('gerenciar-alunos');
+        }
+
         public function init(){
-            echo("Student");
+            $this->view->render();
         }
     }
 ?>
