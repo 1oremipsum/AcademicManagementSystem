@@ -1,9 +1,9 @@
 <?php
     namespace controller;
 
-    class StudentController {
+    class HomeController {
         public function init(){
-            echo("Student");
+            echo "Home";
         }
     }
 ?>
