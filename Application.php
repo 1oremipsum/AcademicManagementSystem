@@ -6,7 +6,7 @@
             $url.="Controller"; 
             if(file_exists('controller/'.$url.'.php')){
                 $className = "controller\\".$url;
-                $controller = new $className();
+                $controller = new $className;
                 $controller->init();
             }else{
                 die ("Error: Controller not found");
